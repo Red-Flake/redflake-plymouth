@@ -1,4 +1,4 @@
-# Nixos load plymouth theme
+# Red-Flake plymouth theme
 
 This is a very simple plymouth theme for nixos containing a static image of the nixos logo.
 
@@ -10,19 +10,19 @@ To install it, you would add this to your nixos configuration file :
 
 ```nix
 let
-  nixos-load-src = pkgs.fetchFromGitHub {
+  redflake-plymouth-src = pkgs.fetchFromGitHub {
     owner = "Red-Flake";
     repo = "redflake-plymouth";
-    rev = "main";
+    rev = "master";
     sha256 = "";
   };
-  nixos-load = pkgs.callPackage nixos-load-src {};
+  redflake-plymouth = pkgs.callPackage redflake-plymouth-src {};
 in
 {
   boot.plymouth = {
     enable = true;
-    themePackages = [ nixos-load ];
-    theme = "nixos-load";
+    themePackages = [ redflake-plymouth ];
+    theme = "redflake-plymouth";
   };
 }
 ```
