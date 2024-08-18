@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=redflake-plymouth
+Description=Redflake Plymouth Theme
+Comment=Created by Mag1cByt3s
+ModuleName=script
+
+[script]
+ImageDir=etc/plymouth/themes/redflake-plymouth
+ScriptFile=etc/plymouth/themes/redflake-plymouth/redflake-plymouth.script
