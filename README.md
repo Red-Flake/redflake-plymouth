@@ -11,8 +11,8 @@ To install it, you would add this to your nixos configuration file :
 ```nix
 let
   nixos-load-src = pkgs.fetchFromGitHub {
-    owner = "paulchambaz";
-    repo = "nixos-plymouth";
+    owner = "Red-Flake";
+    repo = "redflake-plymouth";
     rev = "main";
     sha256 = "";
   };
